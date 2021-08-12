@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "budo index.js:bundle.js --live",
+    "start": "budo index.js:bundle.js --live --ssl",
     "build": "mkdirp build && copyfiles index.html sw.js build && browserify index.js -g yo-yoify -o build/bundle.js"
   },
   "author": "Digital Democracy",
@@ -13,7 +13,7 @@
     "@turf/bbox-polygon": "^6.0.1",
     "@turf/helpers": "^6.1.4",
     "browser-cache-blob-store": "^1.1.1",
-    "mapbox-gl": "^1.1.0",
+    "mapbox-gl": "^2.4.0",
     "mapbox-map-image-stream": "^2.1.1",
     "pump": "^3.0.0",
     "viewport-mercator-project": "^6.1.1",
